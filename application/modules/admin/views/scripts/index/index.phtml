@@ -1,0 +1,25 @@
+<form action="" method="post" enctype="application/x-www-form-urlencoded" name="login_form">
+	<h1>Paniers de la ferme</h1>
+	<div>
+		<input type="text" class="form-control" name="EMAIL" placeholder="Identifiant" required="" />
+	</div>
+	<div>
+		<input type="password" class="form-control" name="PASSWORD" placeholder="Mot de passe" required="" />
+	</div>
+	<?php if(isset($this->error)):?>
+		<?php if($this->error=='true'):?>
+			<div class="error">Identifiant ou mot de passe incorrecte !</div>
+		<?php endif;?>
+	<?php endif;?>
+	<div>
+		<button type="submit" class="btn btn-default submit">Connexion</button>
+		<a class="reset_pass" href="#">Mot de passe oublié ?</a>
+	</div>
+	<div class="clearfix"></div>
+	<div class="separator">
+		<div>
+			<h1><i class="fa fa-paw"></i> Paniers de la ferme</h1>
+			<p>©2016 All Rights Reserved. Paniers de la ferme</p>
+		</div>
+	</div>
+</form>
